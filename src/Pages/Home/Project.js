@@ -1,5 +1,6 @@
 import { CardGroup, Card, Col } from "react-bootstrap";
 import { createUseStyles } from "react-jss";
+import Helmet from "react-helmet";
 
 const useStyles = createUseStyles({
   divTop: {
@@ -27,6 +28,15 @@ const Project = () => {
 
   return (
     <>
+    <Helmet>
+        <title>Yudi Gunawan - Project</title>
+        <meta
+          name="description"
+          content=" Open House FF UI  program kerja bedah
+          fakultas yang dibawahi oleh Departemen Humas BEM FF UI."
+        />
+        <meta name="keywords" content="Project" />
+      </Helmet>
       <div className={classes.divTop}>
         <center>
           <h3 className={classes.textProject}>PROJECT YANG TELAH DIBUAT</h3>

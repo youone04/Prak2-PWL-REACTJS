@@ -1,6 +1,7 @@
 
 import {CardGroup , Card, Col} from 'react-bootstrap'
 import { createUseStyles } from "react-jss";
+import Helmet from "react-helmet";
 
 const useStyles = createUseStyles({
   divTop: {
@@ -26,6 +27,15 @@ const Keahlian = () => {
 
   return (
     <>
+    <Helmet>
+        <title>Yudi Gunawan - Keahlian</title>
+        <meta
+          name="description"
+          content=" React JS adalah sebuah pustaka/library javascript yang bersifat open source untuk membangun User Interface"
+        />
+        <meta name="keywords" content="Keahlian" />
+      </Helmet>
+
       <div className={classes.divTop}>
           <center>
           <h3 className={classes.textKeahlian}>KEAHLIAN</h3>
